@@ -1,0 +1,33 @@
+[submodule "configuration"]
+	path = configuration
+	url = https://github.com/bootifulmicropizza/configuration
+[submodule "infrastructure/jenkins"]
+	path = infrastructure/jenkins
+	url = https://github.com/bootifulmicropizza/jenkins
+[submodule "services/config-service"]
+	path = services/config-service
+	url = https://github.com/bootifulmicropizza/config-service
+[submodule "services/registry-service"]
+	path = services/registry-service
+	url = https://github.com/bootifulmicropizza/registry-service
+[submodule "services/inventory-service"]
+	path = services/inventory-service
+	url = https://github.com/bootifulmicropizza/inventory-service
+[submodule "services/account-service"]
+	path = services/account-service
+	url = https://github.com/bootifulmicropizza/account-service
+[submodule "services/api-gateway"]
+	path = services/api-gateway
+	url = https://github.com/bootifulmicropizza/api-gateway
+[submodule "services/website-api-gateway"]
+	path = services/website-api-gateway
+	url = https://github.com/bootifulmicropizza/website-api-gateway
+[submodule "infrastructure/k8s-cluster"]
+	path = infrastructure/k8s-cluster
+	url = https://github.com/bootifulmicropizza/k8s-cluster
+[submodule "apps/website"]
+	path = apps/website
+	url = https://github.com/bootifulmicropizza/website
+[submodule "services/order-service"]
+	path = services/order-service
+	url = https://github.com/bootifulmicropizza/order-service
