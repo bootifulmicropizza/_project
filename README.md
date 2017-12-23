@@ -19,11 +19,17 @@ $ git clone https://github.com/bootifulmicropizza/_project bootifulmicropizza
 $ cd bootifulmicropizza
 $ git submodule init
 $ git submodule update
-$ tools/build.sh
+$ ./build.sh
 ```
 
 ## Running locally
 
 ```
-$ tools/run_local.sh
+$ ./start.sh
+```
+
+### Shutdown locally
+
+```
+$ ./stop.sh
 ```
