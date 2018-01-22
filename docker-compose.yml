@@ -11,8 +11,6 @@ services:
     environment:
       - BOOTIFUL_MICRO_PIZZA_ENV=dev
       - TZ=Europe/London
-    volumes:
-      - /etc/localtime:/etc/localtime
 
   config-service:
     container_name: config-service
@@ -23,10 +21,8 @@ services:
     environment:
       - BOOTIFUL_MICRO_PIZZA_ENV=dev
       - TZ=Europe/London
-    volumes:
-      - /etc/localtime:/etc/localtime
 
-  registry-service-1:
+  registry-service:
     container_name: registry-service-1
     build: services/registry-service
     restart: always
@@ -37,8 +33,6 @@ services:
       - TZ=Europe/London
       - EUREKA_HOST_PORT=8761
       - EUREKA_HOST_NAME=registry-service-1
-    volumes:
-      - /etc/localtime:/etc/localtime
 
   api-gateway:
     container_name: api-gateway
@@ -49,8 +43,6 @@ services:
     environment:
       - BOOTIFUL_MICRO_PIZZA_ENV=dev
       - TZ=Europe/London
-    volumes:
-      - /etc/localtime:/etc/localtime
 
   inventory-service:
     container_name: inventory-service
@@ -62,8 +54,6 @@ services:
       - BOOTIFUL_MICRO_PIZZA_ENV=dev
       - TZ=Europe/London
       - OAUTH2_PUBLIC_KEY=-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0HQ8LznbLwn5t1WJX3yifpnYvneTOW6eXpj76sePBopoM8/j4JjGSXBJ7DYwHik1szocEKRoSNcdlfgXkiGFd1IHpRCUm9NAfw2+Pde87IzprAWnokt0AVnAhaXK7aa2L7gMD0bTrujiLp+GYdy7U5m+9fhWbOWhWJGvwD1g6KwymDPHRmjH3cO3XM3OQncqAYSNPCW/eKuSv7KNROeZdBkx7wVRVU+Z3GACshxNFUVj3qE7F3FdmPKsHXy3uzJclqaqMp5gzwUblmTqbHajChnDUaKXCgxz7Yi2NVC/STD8PIrijOxYlHfX9kjsk7qYYrtuH2V2xvKkmsO1f6mSvQIDAQAB-----END PUBLIC KEY-----
-    volumes:
-      - /etc/localtime:/etc/localtime
 
   order-service:
     container_name: order-service
@@ -75,8 +65,6 @@ services:
       - BOOTIFUL_MICRO_PIZZA_ENV=dev
       - TZ=Europe/London
       - OAUTH2_PUBLIC_KEY=-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0HQ8LznbLwn5t1WJX3yifpnYvneTOW6eXpj76sePBopoM8/j4JjGSXBJ7DYwHik1szocEKRoSNcdlfgXkiGFd1IHpRCUm9NAfw2+Pde87IzprAWnokt0AVnAhaXK7aa2L7gMD0bTrujiLp+GYdy7U5m+9fhWbOWhWJGvwD1g6KwymDPHRmjH3cO3XM3OQncqAYSNPCW/eKuSv7KNROeZdBkx7wVRVU+Z3GACshxNFUVj3qE7F3FdmPKsHXy3uzJclqaqMp5gzwUblmTqbHajChnDUaKXCgxz7Yi2NVC/STD8PIrijOxYlHfX9kjsk7qYYrtuH2V2xvKkmsO1f6mSvQIDAQAB-----END PUBLIC KEY-----
-    volumes:
-      - /etc/localtime:/etc/localtime
 
   account-service:
     container_name: account-service
@@ -88,8 +76,6 @@ services:
       - BOOTIFUL_MICRO_PIZZA_ENV=dev
       - TZ=Europe/London
       - OAUTH2_PUBLIC_KEY=-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0HQ8LznbLwn5t1WJX3yifpnYvneTOW6eXpj76sePBopoM8/j4JjGSXBJ7DYwHik1szocEKRoSNcdlfgXkiGFd1IHpRCUm9NAfw2+Pde87IzprAWnokt0AVnAhaXK7aa2L7gMD0bTrujiLp+GYdy7U5m+9fhWbOWhWJGvwD1g6KwymDPHRmjH3cO3XM3OQncqAYSNPCW/eKuSv7KNROeZdBkx7wVRVU+Z3GACshxNFUVj3qE7F3FdmPKsHXy3uzJclqaqMp5gzwUblmTqbHajChnDUaKXCgxz7Yi2NVC/STD8PIrijOxYlHfX9kjsk7qYYrtuH2V2xvKkmsO1f6mSvQIDAQAB-----END PUBLIC KEY-----
-    volumes:
-      - /etc/localtime:/etc/localtime
 
   website-api-gateway:
     container_name: website-api-gateway
@@ -101,5 +87,3 @@ services:
       - BOOTIFUL_MICRO_PIZZA_ENV=dev
       - TZ=Europe/London
       - OAUTH2_PUBLIC_KEY=-----BEGIN PUBLIC KEY-----MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA0HQ8LznbLwn5t1WJX3yifpnYvneTOW6eXpj76sePBopoM8/j4JjGSXBJ7DYwHik1szocEKRoSNcdlfgXkiGFd1IHpRCUm9NAfw2+Pde87IzprAWnokt0AVnAhaXK7aa2L7gMD0bTrujiLp+GYdy7U5m+9fhWbOWhWJGvwD1g6KwymDPHRmjH3cO3XM3OQncqAYSNPCW/eKuSv7KNROeZdBkx7wVRVU+Z3GACshxNFUVj3qE7F3FdmPKsHXy3uzJclqaqMp5gzwUblmTqbHajChnDUaKXCgxz7Yi2NVC/STD8PIrijOxYlHfX9kjsk7qYYrtuH2V2xvKkmsO1f6mSvQIDAQAB-----END PUBLIC KEY-----
-    volumes:
-      - /etc/localtime:/etc/localtime

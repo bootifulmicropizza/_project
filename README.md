@@ -19,17 +19,21 @@ $ git clone https://github.com/bootifulmicropizza/_project bootifulmicropizza
 $ cd bootifulmicropizza
 $ git submodule init
 $ git submodule update
-$ ./build.sh
+$ ./build.sh --all
 ```
 
-## Running locally
+## Running locally using Docker Compose
 
 ```
-$ ./start.sh
+$ ./start.sh --all
 ```
 
-### Shutdown locally
+### Shutdown locally using Docker Compose
 
 ```
-$ ./stop.sh
+$ ./stop.sh --all
 ```
+
+### TODO
+
+- Running locally using MiniKube
