@@ -1,9 +1,9 @@
 [submodule "configuration"]
 	path = configuration
 	url = https://github.com/bootifulmicropizza/configuration
-[submodule "infrastructure/jenkins"]
-	path = infrastructure/jenkins
-	url = https://github.com/bootifulmicropizza/jenkins
+[submodule "infrastructure"]
+	path = infrastructure
+	url = https://github.com/bootifulmicropizza/infrastructure
 [submodule "services/config-service"]
 	path = services/config-service
 	url = https://github.com/bootifulmicropizza/config-service
@@ -22,9 +22,6 @@
 [submodule "services/website-api-gateway"]
 	path = services/website-api-gateway
 	url = https://github.com/bootifulmicropizza/website-api-gateway
-[submodule "infrastructure/k8s-cluster"]
-	path = infrastructure/k8s-cluster
-	url = https://github.com/bootifulmicropizza/k8s-cluster
 [submodule "apps/website"]
 	path = apps/website
 	url = https://github.com/bootifulmicropizza/website
