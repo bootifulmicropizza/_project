@@ -16,9 +16,6 @@
 [submodule "services/account-service"]
 	path = services/account-service
 	url = https://github.com/bootifulmicropizza/account-service
-[submodule "services/api-gateway"]
-	path = services/api-gateway
-	url = https://github.com/bootifulmicropizza/api-gateway
 [submodule "services/website-api-gateway"]
 	path = services/website-api-gateway
 	url = https://github.com/bootifulmicropizza/website-api-gateway
